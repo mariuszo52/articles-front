@@ -71,11 +71,12 @@ function MainPage() {
                 <input onChange={event => setArticleUrl(event.target.value)}/>
                 <button type={"submit"}>SCRAPUJ ARTYKUŁ</button>
             </form>
+            TŁUMACZ AI
             <form onSubmit={translate}>
                 <textarea value={spanishBody} onChange={event => setSpanishBody(event.target.value)}></textarea>
                 <button type={"submit"}>TŁUMACZ AI</button>
             </form>
-
+            WYŚLIJ NA FANPAGE
             <form onSubmit={onFormSubmit}>
                 <label>Url</label>
                 <input required={true} value={url} onChange={event => setUrl(event.target.value)}/>

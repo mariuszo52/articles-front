@@ -1,0 +1,22 @@
+ #root{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+     background-color: #7979b5;
+}
+
+.main-div {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+}
+textarea{
+    width: 100%;
+    height: 70%;
+}
