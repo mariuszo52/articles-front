@@ -26,7 +26,7 @@ function MainPage() {
                 setSpanishBody(response.data.body)
                 setUrl(response.data.photoUrl)
             })
-            .catch(err => setErrors(err.response.data))
+            .catch(err => setErrors(err.code))
 
     }
 
@@ -39,7 +39,7 @@ function MainPage() {
         }
         axios.post(sendPostUrl, data)
             .then(response => console.log(response.data))
-            .catch(err => setErrors(err.response.data))
+            .catch(err => setErrors(err.code))
 
     }
 
@@ -59,7 +59,7 @@ function MainPage() {
         }
         axios.post(translateApiUrl, data, {headers: headers})
             .then(response => setPolishBody(response.data.choices[0].message.content))
-            .catch(err => setErrors(err.response.data))
+            .catch(err => setErrors(err.code))
     }
 
 
