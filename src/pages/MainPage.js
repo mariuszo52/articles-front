@@ -21,7 +21,7 @@ function MainPage() {
             url: articleUrl
         }
 
-        axios.post("http://localhost:8080/scrap", null, {params: params})
+        axios.post("'http://nostalgic_ritchie:8080/scrap", null, {params: params})
             .then(response => {
                 setSpanishBody(response.data.body)
                 setUrl(response.data.photoUrl)
